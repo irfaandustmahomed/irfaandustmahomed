@@ -79,23 +79,23 @@ public class Maze
             }
             else
             {
-                if(grid[currentRow][currentCol] == EMPTY)
-                {
-                    grid[currentRow][currentCol] = VISITED;
-                }
-                else if(grid[currentRow][currentCol] == WALL)
-                {
-                    done = true;
-                    System.out.println("what's up"); // Hit wall.
-                }
-                else if(grid[currentRow][currentCol] == END)
-                {
-                    done = true;
-                    solved = true;
-                    System.out.println("wanna join me"); // Solved.
-                }
-                else
-                {} // Do nothing
+              case Maze.Empty:
+              grid[currentRow][currentCol] =Maze.VISITED;
+              break; 
+
+              case Maze.WALL:
+              done = true;
+              System.out.println("YOYOYO");
+              break; 
+          
+              case Maze.END:
+              done = true;
+              solved = true;
+              System.out.println("solved");
+              break;
+              
+              default:
+              //do nothing
             }
             
             charIndex++;
