@@ -86,13 +86,13 @@ public class Maze
                 else if(grid[currentRow][currentCol] == WALL)
                 {
                     done = true;
-                    System.out.println("MESSAGE 3"); // Hit wall.
+                    System.out.println("what's up"); // Hit wall.
                 }
                 else if(grid[currentRow][currentCol] == END)
                 {
                     done = true;
                     solved = true;
-                    System.out.println("MESSAGE 4"); // Solved.
+                    System.out.println("wanna join me"); // Solved.
                 }
                 else
                 {} // Do nothing
@@ -103,7 +103,7 @@ public class Maze
         
         if(!solved)
         {
-            System.out.println("MESSAGE 5"); // Did not reach the end.
+            System.out.println("No Thanks"); // Did not reach the end.
         }
            Viewer.view(grid);   
        }
