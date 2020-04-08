@@ -24,7 +24,7 @@ import java.util.Scanner;
                         break;
                         
                     case Maze.END:
-                        System.out.print("UNI");
+                        System.out.print("CURTIN");
                         break;
                         
                     case Maze.VISITED:
