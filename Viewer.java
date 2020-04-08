@@ -12,23 +12,23 @@ import java.util.Scanner;
                 switch(grid[i][j])
                 {
                     case Maze.EMPTY:
-                        System.out.print("  ");
+                        System.out.print("MHA");
                         break;
                         
                     case Maze.WALL:
-                        System.out.print("##");
+                        System.out.print("BABS");
                         break;
                         
                     case Maze.START:
-                        System.out.print("^^");
+                        System.out.print("MO FOU");
                         break;
                         
                     case Maze.END:
-                        System.out.print("$$");
+                        System.out.print("UNI");
                         break;
                         
                     case Maze.VISITED:
-                        System.out.print("..");
+                        System.out.print("Moris");
                         break;
                         
                     default:
